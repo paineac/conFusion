@@ -21,7 +21,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-               <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
+               <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" alt="logo" height="30" width="41"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -34,6 +34,7 @@
                     <span class="fa fa-sign-in"></span> Login</a>
                 </span>
           </div>
+      </div>
     </nav>
 
     <!-- Login Modal -->
@@ -88,36 +89,36 @@
               <div class="modal-body">
                   <form id="reserveform">
                      <div class="form-group row">
-                         <label for="guests" class="col-md-2 col-form-label">Number of Guests</label>
+                         <label for="guest1" class="col-md-2 col-form-label">Number of Guests</label>
                          <div class="col-md-10">
                              <div class="form-check form-check-inline">
-                                 <label class="form-check-label" for="radio1">
-                                     <input type="radio" class="form-check-input"  id="guest1" name="guests"value="guest1" placeholder="One Guest"> 1
+                                 <label class="form-check-label" for="guest1">
+                                     <input type="radio" class="form-check-input"  id="guest1" name="guest1" value="guest1" placeholder="One Guest"> 1
                                  </label>
                              </div>
                              <div class="form-check form-check-inline">
-                                 <label class="form-check-label" for="radio2">
-                                     <input type="radio" class="form-check-input" id="guest2" name="guests"value="guest2" placeholder="Two Guests"> 2
-                                 </label>
-                             </div>
-                             <div class="form-check form-check-inline" for="radio3">
-                                 <label class="form-check-label">
-                                     <input type="radio" class="form-check-input" id="guest3" name="guests"value="guest3" placeholder="Three Guests"> 3
+                                 <label class="form-check-label" for="guest2">
+                                     <input type="radio" class="form-check-input" id="guest2" name="guest2" value="guest2" placeholder="Two Guests"> 2
                                  </label>
                              </div>
                              <div class="form-check form-check-inline">
-                                 <label class="form-check-label" for="radio4">
-                                     <input type="radio" class="form-check-input"  id="guest4" name="guests"value="guest4" placeholder="Four Guests"> 4
+                                 <label class="form-check-label" for="guest3">
+                                     <input type="radio" class="form-check-input" id="guest3" name="guest3" value="guest3" placeholder="Three Guests"> 3
                                  </label>
                              </div>
                              <div class="form-check form-check-inline">
-                                 <label class="form-check-label" for="radio5">
-                                     <input type="radio" class="form-check-input"  id="guest5" name="guests"value="guest5" placeholder="Five Guests"> 5
+                                 <label class="form-check-label" for="guest4">
+                                     <input type="radio" class="form-check-input"  id="guest4" name="guest4" value="guest4" placeholder="Four Guests"> 4
                                  </label>
                              </div>
-                             <div class="form-check form-check-inline" for="radio6">
-                                 <label class="form-check-label">
-                                     <input type="radio" class="form-check-input"  id="guest6" name="guests"value="guest6" placeholder="Six Guests"> 6
+                             <div class="form-check form-check-inline">
+                                 <label class="form-check-label" for="guest5">
+                                     <input type="radio" class="form-check-input"  id="guest5" name="guest5" value="guest5" placeholder="Five Guests"> 5
+                                 </label>
+                             </div>
+                             <div class="form-check form-check-inline">
+                                 <label class="form-check-label" for="guest6">
+                                     <input type="radio" class="form-check-input"  id="guest6" name="guest6" value="guest6" placeholder="Six Guests"> 6
                                  </label>
                              </div>
                          </div>
@@ -127,16 +128,16 @@
                          <div class="col-12 col-md-4">
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                 <label class="btn btn-success active">
-                                    <input type="radio"  name="section" id="option1" autocomplete="off" checked>Non-Smoking
+                                    <input type="radio"  name="option1" id="section" autocomplete="off" checked>Non-Smoking
                                 </label>
                                 <label class="btn btn-danger">
-                                    <input type="radio" name="section" id="option2" autocomplete="off">Smoking
+                                    <input type="radio" name="option2" id="option2" autocomplete="off">Smoking
                                 </label>
                             </div>
                         </div>
                      </div>
                      <div class="form-group row">
-                         <label for="telnum" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                         <label for="date" class="col-12 col-md-2 col-form-label">Date and Time</label>
                          <div class="col-12 col-md-4">
                              <input type="tel" class="form-control" id="date" name="date" placeholder="Date">
                          </div>
@@ -164,7 +165,7 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
+                    <img src="img/logo.png" class="img-fluid" alt="logo">
                 </div>
 
                 <div class="col-12 col-sm align-self-center">
@@ -217,6 +218,14 @@
                         <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                             <span class="carousel-control-next-icon"></span>
                         </a>
+                        <div class="btn-group" id="carouselButton">
+                            <button class="btn btn-danger btn-sm" id="carousel-pause">
+                                <span class="fa fa-pause"></span>
+                            </button>
+                            <button class="btn btn-danger btn-sm" id="carousel-play">
+                                <span class="fa fa-play"></span>
+                            </button>
+                        </div>
                  </div>
             </div>
         </div>
@@ -254,7 +263,7 @@
                         <img class="d-flex ml-3 img-thumbnail align-self-center"
                         src="img/buffet.png" alt="Weekend Buffet">
                 </div>
-
+            </div>
             </div>
             <div class="row row-content align-items-center">
                 <div class="col-12 col-sm-4 order-sm-last col-md-3">
@@ -269,11 +278,6 @@
                         <h4>Executive Chef</h4>
                         <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-
-
                 </div>
             </div>
         </div>
@@ -323,11 +327,23 @@
            </div>
         </div>
     </footer>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-</body>
+        <script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+            $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+            $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
+        });
+    </script>
 
+</body>
 </html>
